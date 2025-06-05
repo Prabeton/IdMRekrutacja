@@ -25,11 +25,11 @@ Wytyczne SEO
 
 - Title i Meta Description: generowane dynamicznie, unikalne dla kadej podstrony, zgodne z priorytetami słów kluczowych.
 - Tagi nagłówków H1-H6: tylko jedno H1 na stronie głównej; pozostałe uywać zgodnie z hierarhią semantyczną. Nie stosować w stałych elementach szablonu (np. logo, menu, stopka).
-- Meta robots: osadzony w <head>, domyślnie ustawiony index, follow
+- Meta robots: osadzony w `<head>`, domyślnie ustawiony index, follow
 - Format WebP, loading="lazy", pełne alt z opisem kontekstowym
 - srcset do obsługi responsywnych grafik, wymiary adekwatne do wymiaru renderowania
 - Przejysta struktura DOM
-- <header> semantyczny, zawierający menu nawigacyjne i logo
-- Logo jako link do strony głównej (<a href="/">)
-- Osadzenie w tagu semantycznym <section> lub <div class="slider">
-- semantyczny <footer> z logicznym podziałem
+- `<header>` semantyczny, zawierający menu nawigacyjne i logo
+- Logo jako link do strony głównej ( `<a href="/">` )
+- Osadzenie w tagu semantycznym `<section>` lub `<div class="slider">`
+- semantyczny `<footer>`z logicznym podziałem
