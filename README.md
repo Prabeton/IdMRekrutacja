@@ -33,3 +33,7 @@ Wytyczne SEO
 - Logo jako link do strony głównej ( `<a href="/">` )
 - Osadzenie w tagu semantycznym `<section>` lub `<div class="slider">`
 - semantyczny `<footer>`z logicznym podziałem
+
+---------
+1h, 3h, 3h,
+okrótnie wolno mi to idzie `;)` 
