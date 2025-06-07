@@ -12,7 +12,6 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
-
 .header {
   position: fixed;
   top: 0;
@@ -51,7 +50,6 @@ body {
   color: #1D1D1D;
 }
 
-
 .nav-menu {
   display: flex;
   gap: 42px;
@@ -86,7 +84,6 @@ body {
   align-items: center;
 }
 
-
 .main-section {
   padding: 0 42px;
   padding-top: 168px;
@@ -114,15 +111,125 @@ body {
   display: block;
 }
 
+/* ---------- swipper ---------*/
+
 .products-scroll {
-  height: 900px;
-  padding: 0 42px;
-  border: 1px solid black;
+  padding: 96px 42px; 
+  display: flex;
+  flex-direction: column; 
+  gap: 32px; 
+  justify-content: center;
 }
 
+.products-scroll-header {
+  text-align: left;
+}
+
+.products-scroll-subheader {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1D1D1D; 
+  margin-bottom: 8px;
+}
+
+.products-scroll-title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #1D1D1D;
+  margin-bottom: 42px; 
+}
+
+.product-card {
+  flex: 0 0 auto; 
+  width: 284px; 
+  height: 400px; 
+  background-color: #f7f7f7; 
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  position: relative; 
+}
+
+.product-card-badge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background-color: #ffe082; 
+  color: #333;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  z-index: 1;
+}
+
+.product-card-favorite {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.product-card-image-wrapper {
+  flex-grow: 1; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; 
+  border-radius: 4px;
+}
+
+.product-card-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.product-card-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1D1D1D;
+  margin-top: 10px;
+}
+
+.product-card-price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1D1D1D;
+  margin-top: 8px;
+}
+
+.products-scroll-arrow-right {
+  display: flex;
+  justify-content: flex-end; 
+  margin-top: 20px; 
+}
+
+.products-scroll-arrow-right img {
+  cursor: pointer;
+}
+
+/* ------------------------------*/
 
 .products-grid {
   height: 2008px;
   padding: 0 42px;
-  border: 1px solid black;
+  border: 1px solid gray;
+}
+
+/* ------------------------------*/
+.footer {
+  background-color: #eaeae8; 
+  padding: 16px 42px; 
+  text-align: center;
+  border-top: 1px solid #d1d1d1; 
+}
+
+.footer-content {
+  color: #1D1D1D;
+  font-size: 14px;
 }

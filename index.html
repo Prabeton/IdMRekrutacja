@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="./images/FORMAICON=Default.webp" size="32x32" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="styles.css">
   <title>FORMA'SINT.</title>
 </head>
@@ -51,7 +52,61 @@
 
 
   <section class="products-scroll" id="featured-products">
+    <div class="products-scroll-header">
+      <p class="products-scroll-subheader">FEATURED PRODUCTS</p>
+      <h2 class="products-scroll-title">Browse featured</h2>
+    </div>
 
+    <div class="swiper products-scroll-container">
+      <div class="swiper-wrapper">
+        
+        <div class="swiper-slide product-card">
+          <div class="product-card-badge">BESTSELLER</div>
+          <img class="product-card-favorite" src="./images/ICONS=Icon_favorite.webp" alt="Dodaj do ulubionych" width="24" height="24" />
+          <div class="product-card-image-wrapper">
+            <img class="product-card-image" src="./images/product_photo_01_x1.webp" srcset="./images/product_photo_01_x1.webp 1x, ./images/product_photo_01_x2.webp 2x" alt="Dark blue alpine climbing jacket" />
+          </div>
+          <p class="product-card-name">Dark blue alpine climbing jacket</p>
+          <p class="product-card-price">€300,00 EUR</p>
+        </div>
+
+        <div class="swiper-slide product-card">
+          <div class="product-card-badge">LIMITED EDITION</div>
+          <img class="product-card-favorite" src="./images/ICONS=Icon_favorite.webp" alt="Dodaj do ulubionych" width="24" height="24" />
+          <div class="product-card-image-wrapper">
+              <img class="product-card-image" src="./images/product_photo_02_x1.webp" srcset="./images/product_photo_02_x1.webp 1x, ./images/product_photo_02_x2.webp 2x" alt="Orange helmet for alpine TOUNDRA" />
+          </div>
+          <p class="product-card-name">Dark blue alpine climbing jacket</p>
+          <p class="product-card-price">€300,00 EUR</p>
+        </div>
+        
+        <div class="swiper-slide product-card">
+          <div class="product-card-badge">BESTSELLER</div>
+          <img class="product-card-favorite" src="./images/ICONS=Icon_favorite.webp" alt="Dodaj do ulubionych" width="24" height="24" />
+          <div class="product-card-image-wrapper">
+              <img class="product-card-image" src="./images/product_photo_03_x1.webp" srcset="./images/product_photo_03_x1.webp 1x, ./images/product_photo_03_x2.webp 2x" alt="Grey alpine climbing jacket" />
+          </div>
+          <p class="product-card-name">Grey alpine climbing jacket</p>
+          <p class="product-card-price">€300,00 EUR</p>
+        </div>
+
+        <div class="swiper-slide product-card">
+          <div class="product-card-badge">LIMITED EDITION</div>
+          <img class="product-card-favorite" src="./images/ICONS=Icon_favorite.webp" alt="Dodaj do ulubionych" width="24" height="24" />
+          <div class="product-card-image-wrapper">
+              <img class="product-card-image" src="./images/product_photo_01_x1.webp" srcset="./images/product_photo_01_x1.webp 1x, ./images/product_photo_01_x2.webp 2x" alt="Grey alpine climbing jacket" />
+          </div>
+          <p class="product-card-name">Grey alpine climbing jacket</p>
+          <p class="product-card-price">€300,00 EUR</p>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      
+      <!-- <div class="products-scroll-arrow-right">
+        <img src="./images/ICONS=SLIDER_ARROW.webp" alt="Przewiń w prawo" width="72" height="72" />
+      </div> -->
+    </div>
   </section>
 
 
@@ -63,6 +118,12 @@
   <div class="popup">
 
   </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 FORMA'SINT. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 
 </html>

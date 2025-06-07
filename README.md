@@ -15,12 +15,14 @@ Link do api: https://brandstestowy.smallhost.pl/api/random
 Api przyjmuje parametry pageNumber oraz pageSize:
 https://brandstestowy.smallhost.pl/api/random?pageNumber=2&pageSize=2
 
---------
+---
+
 Pliki wykonanego zadania umieść na Google Drive, GitHub lub innym
 repozytorium. Link do odesłania zadania:
 https://forms.gle/sTG5fTc66YiHKYGcA
 
---------
+---
+
 Wytyczne SEO
 
 - Title i Meta Description: generowane dynamicznie, unikalne dla kadej podstrony, zgodne z priorytetami słów kluczowych.
@@ -34,6 +36,12 @@ Wytyczne SEO
 - Osadzenie w tagu semantycznym `<section>` lub `<div class="slider">`
 - semantyczny `<footer>`z logicznym podziałem
 
----------
-1h, 3h, 3h,
-okrótnie wolno mi to idzie `;)` 
+---
+
+1h - wstęp,
+3h - header,
+2h - jakieś exporty i konwersje na webp,
+3h - main,
+3h - products-scroll-part1
+
+okrutnie wolno mi to idzie `;)`
