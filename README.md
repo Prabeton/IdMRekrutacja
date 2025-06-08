@@ -45,5 +45,6 @@ Wytyczne SEO
 3h - products-scroll-part1,
 4h - products-scroll-part2,
 4h - grid and popup
+1h - popup style
 
 okrutnie wolno mi to idzie `;)`
