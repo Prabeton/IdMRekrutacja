@@ -46,5 +46,6 @@ Wytyczne SEO
 4h - products-scroll-part2,
 4h - grid and popup
 1h - popup style
+2h - title i meta description
 
 okrutnie wolno mi to idzie `;)`

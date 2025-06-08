@@ -37,6 +37,28 @@ document.addEventListener('DOMContentLoaded', function() {
   const popupProductImage = document.getElementById('popupProductImage');
   const popupCloseButton = document.querySelector('.popup-close-button');
 
+  const logoLink = document.querySelector('.nav-left-logo'); 
+    if (logoLink) {
+        logoLink.addEventListener('click', () => {
+            console.log('Kliknięto w logo!');
+            updatePageMeta('FORMA\'SINT. - Strona Główna', 'Sklep z odzieżą sportową i sprzętem górskim. Znajdź swoje ulubione produkty!');
+        });
+    }
+
+  const menuHomeLink = document.querySelector('.nav-link[href="#home"]');
+  console.log('menuHomeLink element:', menuHomeLink);
+  const featuredProductsLink = document.querySelector('a[href="#featured-products"]');
+  const productListingLink = document.querySelector('a[href="#product-listing"]');
+
+  const metaDescriptionTag = document.querySelector('meta[name="description"]');
+
+  function updatePageMeta(title, description) {
+    document.title = title;
+    if (metaDescriptionTag) { 
+      metaDescriptionTag.setAttribute('content', description);
+    }
+  }
+
   async function fetchAndRenderProducts(pageSize, pageNumber = 1) {
     try {
       console.log(`Pobieram produkty: pageSize=${pageSize}, pageNumber=${pageNumber}`);
@@ -108,5 +130,28 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       });
     }
+
+  if (menuHomeLink) {
+      menuHomeLink.addEventListener('click', () => {
+      console.log('Kliknięto w link HOME!');
+      updatePageMeta('FORMA\'SINT. - Strona Główna', 'Sklep z odzieżą sportową i sprzętem górskim. Znajdź swoje ulubione produkty!');
+      });
+    }
+
+    if (featuredProductsLink) {
+      featuredProductsLink.addEventListener('click', () => {
+      updatePageMeta('FORMA\'SINT. - Produkty Polecane', 'Odkryj nasze najpopularniejsze produkty i bestsellery.');
+      });
+    }
+
+    if (productListingLink) {
+      productListingLink.addEventListener('click', () => {
+        updatePageMeta('FORMA\'SINT. - Lista Produktów', 'Przeglądaj wszystkie produkty dostępne w naszym sklepie.');
+      });
+    }
+
+  
+    updatePageMeta('FORMA\'SINT. - Strona Główna', 'Sklep z odzieżą sportową i sprzętem górskim. Znajdź swoje ulubione produkty!');
+
 });
 
