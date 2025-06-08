@@ -42,7 +42,8 @@ Wytyczne SEO
 3h - header,
 2h - jakieś exporty i konwersje na webp,
 3h - main,
-3h - products-scroll-part1
-4h - products-scroll-part2
+3h - products-scroll-part1,
+4h - products-scroll-part2,
+4h - grid and popup
 
 okrutnie wolno mi to idzie `;)`

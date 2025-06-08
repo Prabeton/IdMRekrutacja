@@ -165,12 +165,35 @@
 
 
   <section class="products-grid" id="product-listing">
+    <div class="products-grid-header">
+      <div class="products-grid-per-page">
+        NUMBER OF PRODUCTS PER PAGE
+        <select id="pageSizeSelect">
+          <option value="14">14</option>
+          <option value="24">24</option>
+          <option value="36">36</option>
+        </select>
+      </div>
+    </div>
 
+    <div class="products-grid-container">
+      <div class="products-grid-banner">
+        <img src="./images/BANNER_x1.webp" srcset="./images/BANNER_x1.webp 1x, ./images/BANNER_x2.webp 2x" alt="Narciarz na stoku." loading="lazy" />
+      </div>
+    </div>
   </section>
 
 
   <div class="popup">
-
+    <div class="popup-content">
+      <div class="popup-header">
+        <div class="popup-id-label">ID: <span id="popupProductId"></span></div>
+        <button class="popup-close-button">X CLOSE</button>
+      </div>
+      <div class="popup-image-wrapper">
+        <img src="" alt="Product image" id="popupProductImage" />
+      </div>
+    </div>
   </div>
 
   <footer class="footer">
