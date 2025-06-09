@@ -11,8 +11,17 @@ document.addEventListener('DOMContentLoaded', function() {
       prevEl: '.swiper-button-prev',
     },
 
-    
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+
     breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 16,
+        slidesPerGroup: 1,
+      },
       768: {
         slidesPerView: 3,
         spaceBetween: 20,
@@ -88,8 +97,14 @@ document.addEventListener('DOMContentLoaded', function() {
           
         `;
 
-        if (index === 5) {
-          productsGridContainer.appendChild(productsGridBanner);
+        if (window.innerWidth < 768) {
+          if (index === 4) {
+            productsGridContainer.appendChild(productsGridBanner);
+          }
+        } else {
+          if (index === 5) {
+            productsGridContainer.appendChild(productsGridBanner);
+          }
         }
 
         productsGridContainer.appendChild(productCard);
@@ -152,6 +167,75 @@ document.addEventListener('DOMContentLoaded', function() {
 
   
     updatePageMeta('FORMA\'SINT. - Strona Główna', 'Sklep z odzieżą sportową i sprzętem górskim. Znajdź swoje ulubione produkty!');
+
+ 
+  const hamburgerMenu = document.querySelector('.hamburger-menu');
+  const mobileMenuOverlay = document.querySelector('.mobile-menu-overlay');
+  const mobileMenuCloseButton = document.querySelector('.mobile-menu-close-button');
+  const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+  
+  if (hamburgerMenu) {
+    hamburgerMenu.addEventListener('click', () => {
+      mobileMenuOverlay.classList.add('active');
+    });
+  }
+
+  if (mobileMenuCloseButton) {
+    mobileMenuCloseButton.addEventListener('click', () => {
+      mobileMenuOverlay.classList.remove('active');
+    });
+  }
+
+  if (mobileMenuOverlay) {
+    mobileMenuOverlay.addEventListener('click', (event) => {
+      if (event.target === mobileMenuOverlay) {
+        mobileMenuOverlay.classList.remove('active');
+      }
+    });
+  }
+
+  mobileNavLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenuOverlay.classList.remove('active');
+      
+      if (link.getAttribute('href') === '#home') {
+        updatePageMeta('FORMA\'SINT. - Strona Główna', 'Sklep z odzieżą sportową i sprzętem górskim. Znajdź swoje ulubione produkty!');
+      } else if (link.getAttribute('href') === '#featured-products') {
+        updatePageMeta('FORMA\'SINT. - Produkty Polecane', 'Odkryj nasze najpopularniejsze produkty i bestsellery.');
+      } else if (link.getAttribute('href') === '#product-listing') {
+        updatePageMeta('FORMA\'SINT. - Lista Produktów', 'Przeglądaj wszystkie produkty dostępne w naszym sklepie.');
+      }
+    });
+  });
+
+  function updateMetaOnScroll() {
+    const sections = ['home', 'featured-products', 'product-listing'];
+    const scrollPosition = window.scrollY + 100; 
+
+    for (const section of sections) {
+      const element = document.getElementById(section);
+      if (element) {
+        const rect = element.getBoundingClientRect();
+        const elementTop = rect.top + window.scrollY;
+        const elementBottom = elementTop + rect.height;
+
+        if (scrollPosition >= elementTop && scrollPosition < elementBottom) {
+          if (section === 'home') {
+            updatePageMeta('FORMA\'SINT. - Strona Główna', 'Sklep z odzieżą sportową i sprzętem górskim. Znajdź swoje ulubione produkty!');
+          } else if (section === 'featured-products') {
+            updatePageMeta('FORMA\'SINT. - Produkty Polecane', 'Odkryj nasze najpopularniejsze produkty i bestsellery.');
+          } else if (section === 'product-listing') {
+            updatePageMeta('FORMA\'SINT. - Lista Produktów', 'Przeglądaj wszystkie produkty dostępne w naszym sklepie.');
+          }
+          break;
+        }
+      }
+    }
+  }
+
+  window.addEventListener('scroll', updateMetaOnScroll);
+  updateMetaOnScroll();
 
 });
 

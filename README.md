@@ -44,8 +44,11 @@ Wytyczne SEO
 3h - main,
 3h - products-scroll-part1,
 4h - products-scroll-part2,
-4h - grid and popup
-1h - popup style
-2h - title i meta description
+4h - grid and popup,
+1h - popup style,
+2h - title i meta description,
+7h - mobile,
+
+plus pewnie 10h kręcenia się w kółko
 
 okrutnie wolno mi to idzie `;)`

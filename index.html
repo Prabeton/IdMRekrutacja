@@ -34,10 +34,30 @@
       <div class="nav-right">
         <img src="./images/ICONS=Icon_user.webp" alt="logo FORMA'SINT." loading="lazy" width="24" height="24" />
         <div>FRONTEND DEVELOPER</div>
+        <div class="hamburger-menu">
+          <img src="./images/ICONS=MENU_HAMBURGER.webp" alt="Menu" width="24" height="24" />
+        </div>
       </div>
     </nav>
   </header>
 
+  <div class="mobile-menu-overlay">
+    <div class="mobile-menu-content">
+      <div class="mobile-menu-header">
+        <div class="mobile-menu-logo">
+          <img src="./images/FORMAICON=Default.webp" alt="FORMA'SINT." width="24" height="24" />
+        </div>
+        <button class="mobile-menu-close-button">X CLOSE</button>
+      </div>
+      <nav class="mobile-nav">
+        <ul>
+          <li><a href="#home" class="mobile-nav-link">HOME</a></li>
+          <li><a href="#featured-products" class="mobile-nav-link">FEATURED PRODUCTS</a></li>
+          <li><a href="#product-listing" class="mobile-nav-link">PRODUCT LISTING</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
 
   <main class="main-section" id="home">
     <div class="logo-foto">
@@ -46,12 +66,13 @@
           alt="logo FORMA'SINT." loading="lazy" width="50%" />
       </div>
       <div class="logo-foto-foto">
-        <img src="./images/HERO-PHOTO.webp" srcset="./images/HERO-PHOTO.webp 1x, ./images/HERO-PHOTO-x2.webp 2x"
+        <img class="desktop-hero" src="./images/HERO-PHOTO.webp" srcset="./images/HERO-PHOTO.webp 1x, ./images/HERO-PHOTO-x2.webp 2x"
           alt="zdjęcie himalaista z czekanem na lodowcu" loading="lazy" width="1836" />
+        <img class="mobile-hero" src="./images/HERO_PHOTO_MOBILE_x1.webp" srcset="./images/HERO_PHOTO_MOBILE_x1.webp 1x, ./images/HERO_PHOTO_MOBILE_x2.webp 2x"
+          alt="zdjęcie himalaista z czekanem na lodowcu" loading="lazy" />
       </div>
     </div>
   </main>
-
 
   <section class="products-scroll" id="featured-products">
     <div class="products-scroll-header">
@@ -162,9 +183,9 @@
       
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
     </div>
   </section>
-
 
   <section class="products-grid" id="product-listing">
     <div class="products-grid-header">
@@ -180,11 +201,11 @@
 
     <div class="products-grid-container">
       <div class="products-grid-banner">
-        <img src="./images/BANNER_x1.webp" srcset="./images/BANNER_x1.webp 1x, ./images/BANNER_x2.webp 2x" alt="Narciarz na stoku." loading="lazy" />
+        <img class="desktop-grid-banner" src="./images/BANNER_x1.webp" srcset="./images/BANNER_x1.webp 1x, ./images/BANNER_x2.webp 2x" alt="Narciarz na stoku." loading="lazy" />
+        <img class="mobile-grid-banner" src="./images/BANNER_MOBILE_x1.webp" srcset="./images/BANNER_MOBILE_x1.webp 1x, ./images/BANNER_MOBILE_x2.webp 2x" alt="Narciarz na stoku." loading="lazy" />
       </div>
     </div>
   </section>
-
 
   <div class="popup">
     <div class="popup-content">
